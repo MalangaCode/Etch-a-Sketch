@@ -1,3 +1,15 @@
+makeNDivs(16);
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+
+    button.addEventListener('click', () => {
+    makeNDivs(`${button.id}`);
+    });
+});
+
+
 function makeNDivs(n) {
     removeCanvas();
     createCanvas(n);
@@ -26,3 +38,5 @@ function removeCanvas() {
     const element = document.getElementById("canvas");
     element.remove();
 }
+
+
