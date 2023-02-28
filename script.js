@@ -1,18 +1,31 @@
 makeNDivs(16);
+draw();
 
 const buttons = document.querySelectorAll('button');
 
-buttons.forEach((button) => {
+    buttons.forEach((button) => {
 
-    button.addEventListener('click', () => {
-    makeNDivs(`${button.id}`);
+        button.addEventListener('click', () => {
+        makeNDivs(`${button.id}`);
+        });
     });
-});
 
+    
+function draw() {
+    const pixels = document.querySelectorAll('.pixel');
+
+    pixels.forEach((pixel) => {
+
+        pixel.addEventListener('dragover', () => {
+        pixel.style.cssText = `background-color: black;`;
+        });
+    });
+}
 
 function makeNDivs(n) {
     removeCanvas();
     createCanvas(n);
+   
 
     for (let i = 0; i < n**2; i++) {
         const container = document.querySelector('#canvas');

@@ -34,7 +34,11 @@ h1{
 }
 
 .pixel{
-    border: 1px solid #3d405b;
+    border: 1px solid #cfcfcf;
+}
+
+.pixel:hover{
+    background-color: #3d405b;
 }
 
 #footer{
