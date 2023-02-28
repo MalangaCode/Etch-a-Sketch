@@ -19,14 +19,18 @@ h1{
 }
 #sketchPad{
     align-self: center;
+    background-color: #F4F1DE;
     width: 500px;
     height: 500px;
-    background-color: #F4F1DE;
     border: 10px ridge #E07A5F;
     margin: 50px 0px;
+
+}
+
+#canvas{
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    width: 500px;
+    height: 500px;
 }
 
 .pixel{
