@@ -43,10 +43,20 @@ h1{
     padding: 0px 50px 40px 50px;
 }
 
-#bwButton{
+#bwButton,
+#eraser{
     height: 20px;
     width: 50px;
+    border: 1px solid;
+}
+
+#bwButton{
     background-color: black;
+}
+
+#eraser{
+    background-color: white;
+
 }
 
 #footer{
