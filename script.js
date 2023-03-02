@@ -23,6 +23,21 @@ function draw() {
     });
 }
 
+const colorPicker = document.getElementById('colorPicker');
+colorPicker.addEventListener('change', () => {
+
+    let myColor = document.getElementById('colorPicker').value;
+    const pixels = document.querySelectorAll('.pixel');
+
+    pixels.forEach((pixel) => {
+        pixel.addEventListener('mouseenter', () => {
+        pixel.setAttribute(`style`, `background-color: ${myColor}`);       
+        });
+    });
+}
+);
+
+
 function makeNDivs(n) {
     removeCanvas();
     createCanvas(n);
