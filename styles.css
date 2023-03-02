@@ -43,6 +43,12 @@ h1{
     padding: 0px 50px 40px 50px;
 }
 
+#bwButton{
+    height: 20px;
+    width: 50px;
+    background-color: black;
+}
+
 #footer{
     background-color: #e07a5f;
     display: flex;
