@@ -1,6 +1,6 @@
 makeNDivs(16);
-draw();
 
+// canvas size buttons //
 const buttons = document.querySelectorAll('button');
 
     buttons.forEach((button) => {
@@ -15,9 +15,10 @@ function draw() {
     const pixels = document.querySelectorAll('.pixel');
 
     pixels.forEach((pixel) => {
-
-        pixel.addEventListener('dragover', () => {
-        pixel.style.cssText = `background-color: black;`;
+        let i = 9;
+        pixel.addEventListener('mouseenter', () => {
+        pixel.setAttribute(`style`, `background-color: hsl(0, 0%, ${i}0%);`);
+        i--;        
         });
     });
 }
@@ -33,7 +34,8 @@ function makeNDivs(n) {
 
         createDiv.classList.add('pixel');
         container.appendChild(createDiv);  
-    }
+    };
+    draw();
 }
 
 function createCanvas(n) {
