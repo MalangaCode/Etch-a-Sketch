@@ -37,8 +37,10 @@ h1{
     border: 1px solid #cfcfcf;
 }
 
-.pixel:hover{
-    background-color: #3d405b;
+#btnContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 50px 40px 50px;
 }
 
 #footer{
