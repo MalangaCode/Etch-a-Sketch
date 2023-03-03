@@ -1,6 +1,6 @@
 makeNDivs(16);
 
-// canvas size buttons //
+// pixel size buttons //
 
 const buttons = document.getElementById('canvasButtons').childNodes;
 
@@ -25,7 +25,7 @@ function draw() {
     });
 }
 
-// this option let you choose a color to draw //
+// Color picker //
 
 const colorPicker = document.getElementById('colorPicker');
 colorPicker.addEventListener('change', () => {
@@ -38,15 +38,27 @@ colorPicker.addEventListener('change', () => {
         pixel.setAttribute(`style`, `background-color: ${myColor}`);       
         });
     });
-}
-);
+});
 
-// this option let you draw using black and white pixels //
+// Grid switch //
+
+const gridSwitch = document.getElementById('gridSwitch');
+gridSwitch.addEventListener('change', () => {
+    
+    const pixels = document.querySelectorAll('.pixel');
+
+    pixels.forEach((pixel) => {
+        pixel.classList.toggle(`noBorder`); 
+
+    });
+});
+
+// Grey scale //
 
 const bwButton = document.getElementById('bwButton');
 bwButton.addEventListener('click', draw);
 
-// this option let you erase using white pixels //
+// Eraser //
 
 const eraser = document.getElementById('eraser');
 eraser.addEventListener('click', erase);
@@ -56,12 +68,12 @@ function erase() {
 
     pixels.forEach((pixel) => {
         pixel.addEventListener('mouseenter', () => {
-        pixel.setAttribute(`style`, `background-color: #F8F8F8`);       
+        pixel.setAttribute(`style`, `background-color: #F4F1DE`);       
         });
     });
 }
 
-// this function creates a grid of the desired amount of div containers //
+// Pixel grid//
 
 function makeNDivs(n) {
     removeCanvas();
@@ -89,6 +101,7 @@ function createCanvas(n) {
 }
 
 function removeCanvas() {
+
     const element = document.getElementById("canvas");
     element.remove();
 }
