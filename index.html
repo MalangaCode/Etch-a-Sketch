@@ -7,55 +7,59 @@
     <title>Etch a Sketch</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen" rel="stylesheet"> 
 
 </head>
 <body>
     <div id="header">
         <h1>My Sketch</h1>
     </div>
-    <div id="sketchPad">
-        <div id="canvas"></div>
-    </div>
-    <div id="btnContainer">
-        <div>
-            <p>Pixel Size</p>
-            <div id="canvasButtons">
-                <button id="16">Big</button>
-                <button id="32">Medium</button>
-                <button id="64">Small</button>
-            </div>
-        </div>
-        <div>
-            <p>Color picker</p>
+    <div>
+        <div id="btnContainer">
             <div>
-                <input type="color" id="colorPicker" value="#3d405b">
+                <p>Pixel Size</p>
+                <div id="canvasButtons">
+                    <button id="16">Big</button>
+                    <button id="32">Medium</button>
+                    <button id="64">Small</button>
+                </div>
             </div>
-        </div>
-
-        <div>
-            <p>Grey scale</p>
             <div>
-                <button id="bwButton"></button>
+                <p>Color picker</p>
+                <div>
+                    <input type="color" id="colorPicker" value="#E07A5F">
+                </div>
             </div>
-        </div>
-        <div>
-            <p>Eraser</p>
+    
             <div>
-                <button id="eraser"></button>
+                <p>Grey scale</p>
+                <div>
+                    <button id="bwButton"></button>
+                </div>
             </div>
-        </div>
-        <div>
-            <p>Grid</p>
             <div>
-                <label id="gridSwitch" class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                  </label>
+                <p>Eraser</p>
+                <div>
+                    <button id="eraser"></button>
+                </div>
             </div>
+            <div>
+                <p>Grid</p>
+                <div>
+                    <label id="gridSwitch" class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+            </div>
+            
+        </div>
+        <div id="sketchPad">
+            <div id="canvas"></div>
         </div>
         
     </div>
+   
     <div id="footer">
         <p>Copyright© <a href="https://github.com/MalangaCode">MalangaCode</a> 2023</p>
     </div>

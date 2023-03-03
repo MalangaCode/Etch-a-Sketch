@@ -1,21 +1,28 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: #f2cc8f;
+    background-color: #3D405B;
     padding: 0px;
     align-items: stretch;
 }
+
+body div{
+    display: flex;   
+    justify-content: space-evenly;
+}
+
 #header{
     display: flex;
     align-items: end;
     justify-content: center;
-    background-color: #81b29a;
+    background-color: #81B29A;
 }
 
 h1{
-    font-family: "Rubik Iso";
+    font-family: "Silkscreen";
     font-size: 48px;
-    color: #3d405b;
+    color: #F2CC8F;
+    margin: 15px;
 }
 #sketchPad{
     align-self: center;
@@ -43,15 +50,33 @@ h1{
 
 #btnContainer{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     padding: 0px 50px 40px 50px;
 }
 
-#bwButton,
-#eraser{
-    height: 20px;
-    width: 50px;
-    border: 1px solid;
+#btnContainer p{
+    color: #F2CC8F;
+    font-family: 'Silkscreen';
+    font-size: 24px;
+    margin: 10px;
+}
+
+#btnContainer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btnContainer button{
+    height: 40px;
+    width: 80px;
+}
+
+#canvasButtons button{
+    background-color: #E07A5F;
+    margin: 5px;
+    font-family: 'Silkscreen' ;
 }
 
 #bwButton{
@@ -60,7 +85,6 @@ h1{
 
 #eraser{
     background-color: white;
-
 }
 
 .switch {
@@ -122,19 +146,18 @@ input:checked + .slider:before {
     border-radius: 50%;
   }
 #footer{
-    background-color: #e07a5f;
+    background-color: #81B29A;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Rubik Iso";
+    font-family: "Silkscreen";
     font-size: 24px ;
-    color: #3d405b;
+    color: #F2CC8F;
+    padding: 0px;
 }
- #footer p{
-    margin: 10px;
- }
+
 
  #footer a{
     margin: 10px;
-    color: #3d405b;
+    color: #F2CC8F;
  }
