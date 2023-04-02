@@ -4,6 +4,8 @@ body{
     background-color: #3D405B;
     padding: 0px;
     align-items: stretch;
+    margin: 0;
+    padding: 0;
 }
 
 body div{
@@ -60,6 +62,7 @@ h1{
     font-family: 'Silkscreen';
     font-size: 24px;
     margin: 10px;
+    text-align: center;
 }
 
 #btnContainer div{
